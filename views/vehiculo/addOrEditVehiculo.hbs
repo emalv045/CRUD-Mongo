@@ -1,0 +1,92 @@
+<div class="col-md-8 offset-md-1" style="background-color: #fff;margin-top: 25px;padding:20px;">
+
+<h3>{{viewTittle}} </h3>
+<form action="/vehiculo" method="POST"autocomplete="off">
+<input type="hidden"name="_id"value="{{vehiculo._id}}">
+
+    <div class='form-row'>
+        <div class='form-group col-md-6'>
+            <label>Placa </label>
+            <input type="number"class="form-control"name="placa" value="{{vehiculo.placa}}">
+        </div>
+   
+        <div class='form-group col-md-6'>
+            <label> Año de fabricación </label>
+            <input type="number"class="form-control"name="anno"value="{{vehiculo.anno}}">
+        </div>
+    </div>
+    
+    <div class='form-row'>
+        
+        <div class='form-group col-md-6'>
+        <label> Marca </label>
+        <input type="number"class="form-control"name="marca"value="{{vehiculo.marca}}">        
+        </div>
+        
+        <div class='form-group col-md-6'>
+        <label> Modelo </label>
+        <input type="text" class="form-control"name="modelo"value="{{vehiculo.modelo}}">
+        </div>
+        
+    </div>
+
+    <div class='form-row'>
+        <div class='form-group col-md-6'>
+            <label> Estilo </label>
+            <input type="number"class="form-control"name="estilo"value="{{vehiculo.estilo}}">
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label> Capacidad </label>
+            <input type="number"class="form-control"name="capacidad"value="{{vehiculo.capacidad}}">
+        </div>
+    </div>
+
+    <div class='form-row'>
+        <div class='form-group col-md-6'>
+            <label> Cilindrada </label>
+            <input type="number"class="form-control"name="cilindrada"value="{{vehiculo.cilindrada}}">
+        </div>
+        <div class='form-group col-md-6'>
+            <label> Color </label>
+            <input type="text"class="form-control"name="color"value="{{vehiculo.color}}">
+        </div>
+    </div>    
+    
+    <div class='form-row'>
+        <div class='form-group col-md-6'>
+            <label> Combustible </label>
+            <input type="text"class="form-control"name="combustible"value="{{vehiculo.combustible}}">
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label> Transmision </label>
+            <input type="text"class="form-control"name="transmision"value="{{vehiculo.transmision}}">
+        </div>
+
+
+    </div>
+    
+    <div class="form-row">
+        <div class='form-group col-md-6'>
+            <label> Precio de renta </label>
+            <input type="number"class="form-control"name="precio"value="{{vehiculo.precio}}">
+        </div>
+        <div class='form-group col-md-6'>
+            <label> Estado </label>
+            <input type="text"class="form-control"name="estado"value="{{vehiculo.estado}}">
+        </div>
+    </div>
+   
+   <div class='form-group'>
+        <label> Extras </label>
+        <input type="text"class="form-control"name="extras"value="{{vehiculo.extras}}">
+    </div>
+    
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Insertar</button>
+        <a class="btn btn-secondary" href="/vehiculo/list"><i class="fa fa-list-alt"></i> Ver Todos</a>
+    </div>
+
+</form>
+</div>

@@ -1,0 +1,36 @@
+<div class="col-md-7 offset-md-1" style="background-color: #fff;margin-top: 25px;padding:20px;">
+
+<h3>{{viewTittle}} </h3>
+<form action="/cliente" method="POST"autocomplete="off">
+<input type="hidden"name="_id"value="{{cliente._id}}">
+
+    <div class='form-group col-md-6'>
+            <label>Cedula </label>
+            <input type="number"class="form-control"name="cedula" value="{{cliente.cedula}}">
+    </div>
+   
+    <div class='form-group col-md-6'>
+            <label> Nombre </label>
+            <input type="text"class="form-control"name="nombre"value="{{cliente.nombre}}">
+    </div>
+    
+        
+    <div class='form-group col-md-6'>
+        <label> Correo electrónico </label>
+        <input type="text"class="form-control"name="correo"value="{{cliente.correo}}">        
+    </div>
+        
+    <div class='form-group col-md-6'>
+        <label> Teléfono(s) </label>
+        <input type="text" class="form-control"name="telefono"value="{{cliente.telefono}}">
+    </div>
+        
+     
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Insertar</button>
+        <a class="btn btn-secondary" href="/cliente/list"><i class="fa fa-list-alt"></i> Ver Todos</a>
+    </div>
+
+</form>
+
+</div>

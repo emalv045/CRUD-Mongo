@@ -1,0 +1,52 @@
+<div class="col-md-10 offset-md-1" style="background-color: #fff;margin-top: 25px;padding:20px;">
+
+<h3><a class="btn btn-secondary" style="background-color:tomato" href="/vehiculo"><i class="fa fa-plus"></i> Crear Nuevo</a> Lista de Vehiculos</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Placa</th>
+            <th>Año</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Estilo</th>
+            <th>Capacidad</th>
+            <th>Cilindrada</th>
+            <th>Color</th>
+            <th>Combustible</th>
+            <th>Transmision</th>
+            <th>Precio</th>
+            <th>Estado</th>
+            <th>Extras</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.placa}}</td>
+            <td>{{this.anno}}</td>
+            <td>{{this.marca}}</td>
+            <td>{{this.modelo}}</td>
+            <td>{{this.estilo}}</td>
+            <td>{{this.capacidad}}</td>
+            <td>{{this.cilindrada}}</td>
+            <td>{{this.color}}</td>
+            <td>{{this.combustible}}</td>
+            <td>{{this.transmision}}</td>
+            <td>{{this.precio}}</td>
+            <td>{{this.estado}}</td>
+            <td>{{this.extras}}</td>
+
+            <td>
+                <a href="/vehiculo/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/vehiculo/delete/{{this._id}}" onclick="return confirm('Seguro que desea eliminar este vehiculo ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<a href="/">
+<button class="btn btn-secondary" style="background-color:blueviolet"><span>Volver</span></button>
+</a>     
+</div>
