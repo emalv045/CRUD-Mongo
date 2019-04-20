@@ -1,0 +1,34 @@
+<div class="col-md-9 offset-md-1" style="background-color: #fff;margin-top: 25px;padding:20px;">
+
+<h3><a class="btn btn-secondary" style="background-color:tomato" href="/renta"><i class="fa fa-plus"></i> Generar Nueva</a> Lista de Rentas</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Cédula</th>
+            <th>Placa</th>
+            <th>Días</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.cedula}}</td>
+            <td>{{this.placa}}</td>
+            <td>{{this.dia}}</td>
+            <td>{{this.monto}}</td>
+
+            <td>
+                <a href="/renta/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/renta/delete/{{this._id}}" onclick="return confirm('Seguro que desea eliminar esta renta ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<a href="/">
+<button class="btn btn-secondary" style="background-color:blueviolet"><span>Volver</span></button>
+</a>  
+</div>   

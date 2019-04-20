@@ -11,3 +11,4 @@ mongoose.connect('mongodb://localhost:27017/RentCarDB',{useNewUrlParser:true},(e
 
 require('./vehiculo.model');
 require('./cliente.model');
+require('./renta.model');

@@ -7,12 +7,12 @@
     <div class='form-row'>
         <div class='form-group col-md-6'>
             <label>Placa </label>
-            <input type="number"class="form-control"name="placa" value="{{vehiculo.placa}}">
+            <input type="number"class="form-control"name="placa" value="{{vehiculo.placa}}" required>
         </div>
    
         <div class='form-group col-md-6'>
             <label> Año de fabricación </label>
-            <input type="number"class="form-control"name="anno"value="{{vehiculo.anno}}">
+            <input type="number"class="form-control"name="anno"value="{{vehiculo.anno}}"required>
         </div>
     </div>
     
@@ -20,12 +20,12 @@
         
         <div class='form-group col-md-6'>
         <label> Marca </label>
-        <input type="number"class="form-control"name="marca"value="{{vehiculo.marca}}">        
+        <input type="number"class="form-control"name="marca"value="{{vehiculo.marca}}"required>        
         </div>
         
         <div class='form-group col-md-6'>
         <label> Modelo </label>
-        <input type="text" class="form-control"name="modelo"value="{{vehiculo.modelo}}">
+        <input type="text" class="form-control"name="modelo"value="{{vehiculo.modelo}}"required>
         </div>
         
     </div>
@@ -33,35 +33,55 @@
     <div class='form-row'>
         <div class='form-group col-md-6'>
             <label> Estilo </label>
-            <input type="number"class="form-control"name="estilo"value="{{vehiculo.estilo}}">
+
+            <select id="estilo" name="estilo" class="form-control" required>
+            <option selected>{{vehiculo.estilo}}</option>
+            <option>Sedán</option>
+            <option>Pickup</option>
+            <option>TodoTerreno</option>
+            <option>Microbús</option>
+
+            </select>
         </div>
 
         <div class='form-group col-md-6'>
             <label> Capacidad </label>
-            <input type="number"class="form-control"name="capacidad"value="{{vehiculo.capacidad}}">
+            <input type="number"class="form-control"name="capacidad"value="{{vehiculo.capacidad}}"required>
         </div>
     </div>
 
     <div class='form-row'>
         <div class='form-group col-md-6'>
             <label> Cilindrada </label>
-            <input type="number"class="form-control"name="cilindrada"value="{{vehiculo.cilindrada}}">
+            <input type="number"class="form-control"name="cilindrada"value="{{vehiculo.cilindrada}}"required>
         </div>
         <div class='form-group col-md-6'>
             <label> Color </label>
-            <input type="text"class="form-control"name="color"value="{{vehiculo.color}}">
+            <input type="text"class="form-control"name="color"value="{{vehiculo.color}}"required>
         </div>
     </div>    
     
     <div class='form-row'>
         <div class='form-group col-md-6'>
             <label> Combustible </label>
-            <input type="text"class="form-control"name="combustible"value="{{vehiculo.combustible}}">
+            
+            <select id="combustible" name="combustible" class="form-control" required>
+            <option selected>{{vehiculo.combustible}}</option>
+            <option>Gasolina</option>
+            <option>Diesel</option>
+            <option>Híbrido</option>
+            <option>Eléctrico</option>
+            </select>
         </div>
 
         <div class='form-group col-md-6'>
             <label> Transmision </label>
-            <input type="text"class="form-control"name="transmision"value="{{vehiculo.transmision}}">
+            <select id="transmision" name="transmision" class="form-control"required>
+            <option selected>{{vehiculo.transmision}}</option>
+            <option>Automatico</option>
+            <option>Manual</option>
+            </select>
+
         </div>
 
 
@@ -70,17 +90,22 @@
     <div class="form-row">
         <div class='form-group col-md-6'>
             <label> Precio de renta </label>
-            <input type="number"class="form-control"name="precio"value="{{vehiculo.precio}}">
+            <input type="number"class="form-control"name="precio"value="{{vehiculo.precio}}" placeholder="CRC"required>
         </div>
         <div class='form-group col-md-6'>
             <label> Estado </label>
-            <input type="text"class="form-control"name="estado"value="{{vehiculo.estado}}">
+            <select id="estado" name="estado" class="form-control"required>
+            <option selected>{{vehiculo.estado}}</option>
+            <option>Disponible</option>
+            <option>Rentado</option>
+            </select>
         </div>
     </div>
    
    <div class='form-group'>
-        <label> Extras </label>
-        <input type="text"class="form-control"name="extras"value="{{vehiculo.extras}}">
+        <label> Extras </label>       
+        <textarea class="form-control" id="extras"name="extras" rows="3">{{vehiculo.extras}}</textarea>
+ 
     </div>
     
     <div class="form-group">

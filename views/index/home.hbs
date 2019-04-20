@@ -2,13 +2,11 @@
 
 <div>
     <div>
-        <h1 style="margin: 1;font-size: 85px;font-weight: 300;text-align:center"
-        >RentCar CR</h1>
+        <h1 style="margin: 1;font-size: 85px;font-weight: 300;text-align:center">RentCar CR</h1>
+        
         <br>
         <h3>Seleccione la acción que desea realizar:</h3>
         <br>
-
-
 
         <div class="form-row">
             <div class="col-md-6">
@@ -22,6 +20,23 @@
             </div>
 
             <div class="col-md-6">
+                <h3>Consultar Vehiculos</h3>
+                <a href="/vehiculo">
+                <button class="buttonQ"><span>Placa</span></button>
+                </a>
+                <a href="/vehiculo/list">
+                <button class="buttonQ"><span>Marca</span></button>
+                </a>
+                <a href="/vehiculo/list">
+                <button class="buttonQ"><span>Precio</span></button>
+                </a>
+            </div>
+        </div>
+        <br>
+
+        <div class="form-row">
+
+            <div class="col-md-6">
                 <h3>Clientes</h3>
                 <a href="/cliente">
                 <button class="buttonC"><span>Añadir</span></button>
@@ -30,31 +45,50 @@
                 <button class="buttonC"><span>Ver Todos</span></button>
                 </a>
             </div>
-        </div>
-        <br><br>
 
+            <div class="col-md-6">
+                <a href="/vehiculo/list">
+                <button class="buttonQ"><span>Modelo</span></button>
+                </a>
+
+            </div>
+            
+        </div>
+        <br>
         <div class="form-row">
             <div class="col-md-6">
                 <h3>Rentas</h3>
-                <a href="/vehiculo">
+                <a href="/renta">
                 <button class="buttonR"><span>Generar</span></button>
                 </a>
-                <a href="/vehiculo/list">
+                <a href="/renta/list">
                 <button class="buttonR"><span>Ver Todas</span></button>
                 </a>
             </div>
 
             <div class="col-md-6">
-                <h3>Consultas</h3>
+                <h3>Consultar Datos de Vehiculos</h3>
+                <h5>Precio de Renta</h5>
                 <a href="/vehiculo">
-                <button class="buttonQ"><span>Añadir</span></button>
+                <button class="buttonQT"><span>Mayor Precio</span></button>
                 </a>
                 <a href="/vehiculo/list">
-                <button class="buttonQ"><span>Ver Todos</span></button>
+                <button class="buttonQT"><span>Menor Precio</span></button>
+                </a>
+                <br>
+
+                <h5>Otros</h5>
+                <a href="/vehiculo/list">
+                <button class="buttonQT"><span>Cantidad Total Vehiculos</span></button>
+                </a>
+                <a href="/vehiculo/list">
+                <button class="buttonQT"><span>Precio Promedio</span></button>
                 </a>
             </div>
-        </div>
 
+                        
+        </div>
+        <br>
     </div>
       
 </div>

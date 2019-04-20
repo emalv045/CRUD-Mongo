@@ -4,7 +4,7 @@ var vehiculoSchema=new mongoose.Schema({
     placa:{type: Number},
     capacidad:{type: Number},
     marca:{type: Number},
-    estilo:{type: Number},
+    estilo:{type: String},
     modelo:{type:String},
     color:{type:String},
     cilindrada:{type: Number},
