@@ -1,5 +1,5 @@
 # CRUD-Mongo
-CRUD with MongoDB and Node JS
+CRUD MongoDB y Node JS
 
 Sistema de Renta de Vehiculos que contiene CRUD de:
 
