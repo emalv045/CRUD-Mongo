@@ -9,7 +9,7 @@ Sistema de Renta de Vehiculos que contiene CRUD de:
 
 Además permite consultar vehículos según filtros de Placa,Marca,Rango de Precio,entre otros.
 
-Enlaces de interes:
+Enlaces utilizados:
 
 	Video https://www.youtube.com/watch?v=voDummz1gO0
 	Express https://www.npmjs.com/package/express
